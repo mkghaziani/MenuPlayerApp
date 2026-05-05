@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:maxWidth="600dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Server URL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ERPNext Server URL"
+            android:textColor="#AAFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etServerUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="http://192.168.1.100:8000"
+            android:inputType="textUri"
+            android:textColor="@color/white"
+            android:textColorHint="#66FFFFFF"
+            android:backgroundTint="@color/accent"
+            android:layout_marginBottom="20dp" />
+
+        <!-- API Token -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="API Token (key:secret)"
+            android:textColor="#AAFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etApiToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="abc123:def456"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="#66FFFFFF"
+            android:backgroundTint="@color/accent"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Screen ID -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screen ID"
+            android:textColor="#AAFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etScreenId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="screen-1"
+            android:textColor="@color/white"
+            android:textColorHint="#66FFFFFF"
+            android:backgroundTint="@color/accent"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Settings PIN -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings PIN"
+            android:textColor="#AAFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1234"
+            android:inputType="numberPassword"
+            android:textColor="@color/white"
+            android:textColorHint="#66FFFFFF"
+            android:backgroundTint="@color/accent"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Save &amp; Start Player"
+            android:backgroundTint="@color/accent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
